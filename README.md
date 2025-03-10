@@ -1,65 +1,77 @@
 # API Management Dashboard
 
-A modern, sleek dashboard for enterprise API management that provides a bird's eye view of your API ecosystem, including metrics, AWS cloud consumption, and other key performance indicators.
+A modern, sleek dashboard for enterprise API management that provides a comprehensive view of your API ecosystem, including metrics, AWS cloud consumption, and other key performance indicators. Built with React and Material UI, this dashboard offers a responsive and intuitive interface for managing and monitoring your APIs.
 
 ## Features
 
-- Comprehensive API inventory and management
-- Real-time performance metrics visualization
-- AWS cloud resource consumption tracking
-- API health monitoring and alerting
-- Usage analytics and trends
-- Cost optimization insights
+- **Cloud Consumption Analytics**: Detailed visualization of AWS service usage and costs
+- **API Inventory Management**: Comprehensive view of all your APIs
+- **Interactive Dashboards**: Real-time metrics and performance indicators
+- **Responsive Design**: Optimized for all device sizes
+- **Modern UI/UX**: Clean and intuitive interface using Material UI
+- **Data Visualization**: Beautiful charts and graphs using Recharts
 
 ## Tech Stack
 
-- React.js with Vite for frontend
-- Material UI for sleek, modern UI components
-- Recharts for data visualization
-- AWS SDK for cloud metrics integration
+- **Frontend Framework**: React.js with Vite
+- **UI Library**: Material UI v5
+- **Data Visualization**: Recharts
+- **Routing**: React Router v6
+- **Development Tools**: ESLint, Prettier
+- **Package Manager**: npm
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm or yarn
+- Node.js (v18 or higher)
+- npm (v9 or higher)
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/parishrut17/Dashboard-for-API-management-.git
 cd api-management-dashboard
 
 # Install dependencies
 npm install
-# or
-yarn install
 
 # Start the development server
 npm run dev
-# or
-yarn dev
 ```
 
-### Configuration
-
-Create a `.env` file in the root directory with your AWS credentials and other configuration:
+### Project Structure
 
 ```
-VITE_AWS_ACCESS_KEY_ID=your_access_key
-VITE_AWS_SECRET_ACCESS_KEY=your_secret_key
-VITE_AWS_REGION=your_region
+├── src/
+│   ├── assets/          # Static assets
+│   ├── components/      # React components
+│   │   ├── layouts/     # Layout components
+│   │   └── pages/       # Page components
+│   ├── App.jsx         # Main app component
+│   └── main.jsx        # Entry point
+├── index.html          # HTML template
+├── package.json        # Project dependencies
+└── vite.config.js      # Vite configuration
 ```
 
-## Build for Production
+## Available Scripts
 
 ```bash
+# Start development server
+npm run dev
+
+# Build for production
 npm run build
-# or
-yarn build
+
+# Preview production build
+npm run preview
 ```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
